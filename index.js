@@ -13,7 +13,7 @@ mongoose
     .catch((e) => { console.log(e) })
 
 app.use(express.json());
-app.use("api/auth", authRoutes)
+app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 
 
